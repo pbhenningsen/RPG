@@ -69,7 +69,7 @@ if (global.gamePaused)
 {
 	draw_set_color(c_black);
 	draw_set_alpha(0.75);
-	draw_rectangle(0,0,RESOLUTION_W,RESOLUTION_H,false)
+	draw_rectangle(0,0,RESOLUTION_W*4,RESOLUTION_H*4,false)
 	draw_set_alpha(1.0);//we're setting this back to 1 because otherwise the game would keep drawing everything at .75 opacity
 	draw_set_color(c_white);
 	draw_set_font(fText);
@@ -77,7 +77,7 @@ if (global.gamePaused)
 	draw_set_valign(fa_middle);
 	
 
-	draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5, "...Game Paused...");
+	draw_text(RESOLUTION_W * 2, RESOLUTION_H * 2, "...Game Paused...");
 	for (var i = 0; i < array_length(pauseOption); i++)
 		{
 			var _print = "";
@@ -90,7 +90,7 @@ if (global.gamePaused)
 				_print += pauseOption[i];
 				draw_set_alpha(0.7);
 			}
-			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 + 18 + (i * 12), _print);
+			draw_text(RESOLUTION_W * 2, RESOLUTION_H * 2 + 18 + (i * 12), _print);
 			draw_set_alpha(1.0);
 	
 		}

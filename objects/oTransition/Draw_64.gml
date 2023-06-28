@@ -1,8 +1,8 @@
 if (type == TRANS_TYPE.SLIDE)
 {
 	draw_set_color(c_black);
-	draw_rectangle(0,0,width,percent * heightHalf, false);//go from top of screen to middle
-	draw_rectangle(0,height,width,height-(percent*heightHalf),false);//moves up from the bottom
+	draw_rectangle(0,0,width *2,percent * heightHalf, false);//go from top of screen to middle
+	draw_rectangle(0,height,width *2,height-(percent*heightHalf),false);//moves up from the bottom
 }
 
 

@@ -1,9 +1,9 @@
 /// @desc 
 
 //Establish coordinates of Textbox (where it starts off)
-x1 = RESOLUTION_W/2;//puts it in the middle of the screen
+x1 = RESOLUTION_W;//puts it in the middle of the screen
 y1 = RESOLUTION_H-70;
-x2 = RESOLUTION_W/2;//puts it in the middle of the screen
+x2 = RESOLUTION_W;//puts it in the middle of the screen
 y2 = RESOLUTION_H;
 
 //Increase width of box over time (since we're animating it)
